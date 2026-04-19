@@ -1,0 +1,13 @@
+.cityInfo {
+    padding: 20px;
+    width: calc(50% - 40px);
+}
+
+.textInfo {
+    margin-left: 20px;
+}
+
+
+.infoImg img {
+    width: 100%;
+}

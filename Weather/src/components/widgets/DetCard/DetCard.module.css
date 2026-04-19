@@ -1,0 +1,43 @@
+.detCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* 2 колонки */
+    grid-template-rows: 1fr 1fr;
+    /* 2 строки */
+
+    overflow: hidden;
+    border-radius: 30px;
+    width: 100%;
+    background: linear-gradient(to bottom right,
+            rgba(0, 0, 0, 0.1) 0%,
+            rgba(0, 0, 0, 0.2) 50%,
+            rgba(0, 0, 0, 0.4) 100%);
+}
+
+
+.detCard>* {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 30px;
+    background: linear-gradient(to bottom right,
+            rgba(0, 0, 0, 0.1) 0%,
+            rgba(0, 0, 0, 0.2) 50%,
+            rgba(0, 0, 0, 0.4) 100%);
+
+
+
+}
+
+.minMax {
+    flex-direction: row;
+    gap: 10px;
+}
+
+.minMax * {
+    text-align: center;
+}

@@ -1,0 +1,59 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+
+  margin: 0;
+}
+
+h1 {
+  font-size: 70px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 15px;
+  font-style: italic;
+}
+
+
+input {
+  border: none;
+}
+
+input,
+input:hover,
+input:focus,
+input:focus-visible,
+input:active {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+button {
+  border: none;
+  color: white;
+}
