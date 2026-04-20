@@ -1,5 +1,4 @@
 .container {
-    margin: auto;
     padding: 20px 0;
-    width: 700px;
+    height: calc(100vh - 40px);
 }

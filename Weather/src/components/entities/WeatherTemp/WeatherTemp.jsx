@@ -9,7 +9,7 @@ function WeatherTemp() {
                 <h4>Feels like 10</h4>
             </div>
             <div className={`${Styles.detailsUp}`}>
-                <div className="wind">
+                <div className={`${Styles.wind}`}>
                     <span>Wind:</span> 12 km/h
                 </div>
                 <div className={`${Styles.line}`}></div>

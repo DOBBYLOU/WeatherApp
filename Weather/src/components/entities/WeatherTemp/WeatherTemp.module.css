@@ -27,6 +27,16 @@
     align-items: center;
 }
 
+.wind,
+.humidity {
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom right,
+            rgba(0, 0, 0, 0.1) 0%,
+            rgba(0, 0, 0, 0.2) 50%,
+            rgba(0, 0, 0, 0.4) 100%);
+}
+
 .line {
     height: 100%;
     width: 2px;
@@ -34,5 +44,4 @@
             transparent,
             rgba(225, 225, 225, 0.6),
             transparent);
-    ;
 }
