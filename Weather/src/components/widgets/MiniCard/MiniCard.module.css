@@ -1,0 +1,155 @@
+.miniCard {
+  padding: 10px;
+  display: flex;
+  gap: 10%;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 30px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  backdrop-filter: blur(1px);
+}
+
+.loading {
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+
+  background-size: 400% 400%;
+
+  animation: gradientMove 5s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.loading > * {
+  opacity: 0;
+}
+
+.textSec {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.textSec h2 {
+  font-size: 20px;
+}
+
+.textSec h4 {
+  font-size: 25px;
+}
+
+.imgCont {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgCont img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 1100px) {
+  .miniCard {
+    backdrop-filter: blur(10px);
+  }
+
+  .textSec h2 {
+    font-size: 30px;
+  }
+
+  .textSec h4 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .textSec h2 {
+    font-size: 25px;
+  }
+
+  .textSec h4 {
+    font-size: 30px;
+  }
+
+  .imgCont img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 620px) {
+  .textSec h2 {
+    font-size: 20px;
+  }
+
+  .textSec h4 {
+    font-size: 25px;
+  }
+
+  .imgCont img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 520px) {
+  .miniCard {
+    border-radius: 15px;
+  }
+
+  .textSec h2 {
+    font-size: 15px;
+  }
+
+  .textSec h4 {
+    font-size: 20px;
+  }
+
+  .imgCont img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .miniCard {
+    padding: 5px;
+  }
+
+  .textSec {
+    container-type: inline-size;
+  }
+
+  .textSec h2 {
+    font-size: 13cqw;
+  }
+
+  .textSec h4 {
+    font-size: 15cqw;
+  }
+}

@@ -1,47 +1,98 @@
 .tempInfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
-    width: calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 10px;
+  width: calc(50% - 20px);
 }
 
 .temp {
-    text-align: center;
-    padding-bottom: 30px;
-    border-bottom: 2px solid;
-    border-image: linear-gradient(to right,
-            transparent,
-            rgba(225, 225, 225, 0.6),
-            transparent) 1;
-
-
+  text-align: center;
+  padding-bottom: 30px;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(
+      to right,
+      transparent,
+      rgba(225, 225, 225, 0.6),
+      transparent
+    )
+    1;
 }
 
-
-
 .detailsUp {
-    height: 80px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .wind,
 .humidity {
-    padding: 10px;
-    border-radius: 15px;
-    background: linear-gradient(to bottom right,
-            rgba(0, 0, 0, 0.1) 0%,
-            rgba(0, 0, 0, 0.2) 50%,
-            rgba(0, 0, 0, 0.4) 100%);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 15px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
 }
 
 .line {
-    height: 100%;
-    width: 2px;
-    background: linear-gradient(to bottom,
-            transparent,
-            rgba(225, 225, 225, 0.6),
-            transparent);
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(225, 225, 225, 0.6),
+    transparent
+  );
+}
+
+@media (max-width: 1100px) {
+  .tempInfo {
+    width: calc(100% - 20px);
+  }
+
+  .temp h1 {
+    font-size: 70px;
+  }
+
+  .temp h4 {
+    font-size: 20px;
+  }
+
+  .detailsUp {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .line {
+    height: 60px;
+  }
+
+  .wind,
+  .humidity {
+    text-align: center;
+    width: 40%;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .detailsUp {
+    padding: 5px 0;
+    gap: 5px;
+  }
+
+  .wind,
+  .humidity {
+    width: 30%;
+    margin: 5px 0;
+    font-size: 15px;
+  }
+
+  .line {
+    display: none;
+  }
 }

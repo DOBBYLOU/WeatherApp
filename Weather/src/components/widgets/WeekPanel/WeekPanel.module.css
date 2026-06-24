@@ -1,0 +1,16 @@
+.weekPanel {
+  height: calc(100% - 40px);
+  width: calc(100% - 40px);
+  padding: 20px;
+}
+
+.cardCont {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.cardCont > *:nth-child(1) {
+  grid-column: span 2;
+}

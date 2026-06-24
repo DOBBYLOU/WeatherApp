@@ -1,29 +1,53 @@
-import js from '@eslint/js'
-import globals from 'globals'
-import reactHooks from 'eslint-plugin-react-hooks'
-import reactRefresh from 'eslint-plugin-react-refresh'
-import { defineConfig, globalIgnores } from 'eslint/config'
+import js from '@eslint/js';
+import globals from 'globals';
+import react from 'eslint-plugin-react';
+import reactHooks from 'eslint-plugin-react-hooks';
 
-export default defineConfig([
-  globalIgnores(['dist']),
+export default [
+  js.configs.recommended,
+
   {
     files: ['**/*.{js,jsx}'],
-    extends: [
-      js.configs.recommended,
-      reactHooks.configs.flat.recommended,
-      reactRefresh.configs.vite,
-    ],
+
     languageOptions: {
-      ecmaVersion: 2020,
+      ecmaVersion: 'latest',
+      sourceType: 'module',
       globals: globals.browser,
       parserOptions: {
-        ecmaVersion: 'latest',
-        ecmaFeatures: { jsx: true },
-        sourceType: 'module',
+        ecmaFeatures: {
+          jsx: true,
+        },
       },
     },
+
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
+
+    plugins: {
+      react: react,
+      'react-hooks': reactHooks,
+    },
+
     rules: {
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      // JS
+      'no-unused-vars': 'warn',
+      'no-console': 'warn',
+
+      // React
+      'react/react-in-jsx-scope': 'off',
+      'react/jsx-uses-vars': 'error',
+
+      // Hooks
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'warn',
+
+      // отключаем отступы (Prettier)
+      indent: 'off',
+      'react/jsx-indent': 'off',
+      'react/jsx-indent-props': 'off',
     },
   },
-])
+];

@@ -1,4 +1,12 @@
 .container {
+  padding: 20px 0;
+  height: calc(100vh - 40px);
+}
+
+@media (max-width: 1100px) {
+  .container {
+    margin-inline: auto;
     padding: 20px 0;
-    height: calc(100vh - 40px);
+    height: auto;
+  }
 }

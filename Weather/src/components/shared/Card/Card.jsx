@@ -1,11 +1,7 @@
-import Styles from './Card.module.css'
+import Styles from './Card.module.css';
 
 function Card({ children }) {
-    return (
-        <div className={`${Styles.card}`}>
-            {children}
-        </div>
-    )
+  return <div className={`${Styles.card}`}>{children}</div>;
 }
 
-export default Card
+export default Card;
