@@ -1,3 +1,11 @@
+
+
+https://github.com/user-attachments/assets/87995312-657a-4869-823e-c51cb4f92c4e
+
+
+
+https://github.com/user-attachments/assets/ad1a2400-db25-4118-8756-fb9a1b514db5
+
 # 🌦️ Weather App
 
 <p align="center">
