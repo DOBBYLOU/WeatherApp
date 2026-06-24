@@ -1,10 +1,6 @@
 
 
-https://github.com/user-attachments/assets/87995312-657a-4869-823e-c51cb4f92c4e
 
-
-
-https://github.com/user-attachments/assets/ad1a2400-db25-4118-8756-fb9a1b514db5
 
 # 🌦️ Weather App
 
@@ -59,9 +55,7 @@ Crafted a modern glassmorphism interface that remains smooth, responsive, and vi
 
 ## 📸 Preview
 
-<p align="center">
-  <img src='file:///C:/Users/%D0%A1%D0%B0%D1%88%D0%B0/Desktop/Code/Weather%20Web/Weather/WeatherIMG.png" width="700" alt="Weather App Preview"/>
-</p>
+https://github.com/user-attachments/assets/87995312-657a-4869-823e-c51cb4f92c4e
 
 ---
 
